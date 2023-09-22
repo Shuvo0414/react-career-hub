@@ -1,8 +1,10 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -38,7 +40,11 @@ const Job = ({ job }) => {
           </h2>
         </div>
         <div className="card-actions mt-8">
-          <button className="btn bg-[#7E90FE] text-white">View Details</button>
+          <Link to={`/job/${id}`}>
+            <button className="btn bg-[#7E90FE] text-white">
+              View Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>
