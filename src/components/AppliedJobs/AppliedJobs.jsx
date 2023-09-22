@@ -37,7 +37,7 @@ const AppliedJobs = () => {
     <div>
       <div className="dropdown dropdown-end">
         <label tabIndex={0} className="btn m-1">
-          Click
+          Fiter
         </label>
         <ul
           tabIndex={0}
